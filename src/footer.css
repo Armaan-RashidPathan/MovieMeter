@@ -1,0 +1,47 @@
+/* Footer Styles */
+
+.footer {
+    background-color: #1a1a1a;
+    color: #bbb;
+    
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #333;
+    
+    height: 40px;
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer-link {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+  .footer-link:hover {
+    color: #e50914;
+  }
+  

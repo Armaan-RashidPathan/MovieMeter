@@ -1,5 +1,14 @@
 :root {
-  background-color: #242424;
+  background-color: #3e3e3e;
+}
+
+html,body{
+  margin: 0px;
+  height: 100%;
+  position: relative;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 @media (prefers-color-scheme: light) {
