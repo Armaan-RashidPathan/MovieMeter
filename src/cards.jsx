@@ -1,4 +1,4 @@
-
+import './cards.css'
 import PropTypes from 'prop-types'
 
 function MovieCards(props){

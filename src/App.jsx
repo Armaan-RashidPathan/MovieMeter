@@ -6,7 +6,8 @@ function App() {
 
   return (
     <>
-      <MovieCards name="Movie1" genre={"horror"} year={2000} img={sampleThumbnail}/>
+      <MovieCards name="Movie1" genre={"Horror"} year={2000} img={sampleThumbnail}/>
+      <MovieCards name="Movie2" genre={"Drama"} year={2001} img={sampleThumbnail}/>
     </>
   )
 }

@@ -1,0 +1,31 @@
+.block{
+    height: 300px;
+    width: 200px;
+    display: inline-block;
+    margin-right: 10px;
+
+    background-color: rgb(127, 127, 127);
+    box-shadow: 1px 1px 5px rgb(78, 78, 78);
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 10px;
+    font-size: 18px;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+p{
+    padding-left: 8px;
+}
+
+.Image {
+    border-radius: 5px;
+}
+
+.block:hover{
+    transform: scale(1.02);
+    animation-duration: 3s;
+}
