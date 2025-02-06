@@ -2,10 +2,10 @@
     height: 300px;
     width: 200px;
     display: inline-block;
+    margin-bottom: 20px;
     margin-left: 20px;
 
     background-color: rgb(127, 127, 127);
-    box-shadow: 1px 1px 5px rgb(78, 78, 78);
     border: 2px solid black;
     padding: 10px;
     border-radius: 10px;
@@ -28,4 +28,5 @@ p{
 .block:hover{
     transform: scale(1.02);
     animation-duration: 3s;
+    box-shadow: 0.5px 0.5px 10px #e93a42;
 }
