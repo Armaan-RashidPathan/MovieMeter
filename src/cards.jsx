@@ -5,9 +5,11 @@ function MovieCards(props){
     return(
         <div className='block'>
             <img alt="Image" src={props.img} className='Image' width={200} height={200}></img>
-            <p> Name : {props.name}</p>
-            <p> Genre : {props.genre}</p>
-            <p> Release : {props.year}</p>
+            <div className='details'>
+                <p> Name : {props.name}</p>
+                <p> Genre : {props.genre}</p>
+                <p> Release : {props.year}</p>
+            </div>
         </div>
     );
 }

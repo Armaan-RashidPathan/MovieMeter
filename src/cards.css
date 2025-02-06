@@ -28,5 +28,5 @@ p{
 .block:hover{
     transform: scale(1.02);
     animation-duration: 3s;
-    box-shadow: 0.5px 0.5px 10px #e93a42;
+    box-shadow: 0.5px 0.5px 10px #e8111c;
 }
