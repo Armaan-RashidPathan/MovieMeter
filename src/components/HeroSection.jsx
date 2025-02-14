@@ -1,19 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
+import MoodModal from "./MoodModal"; // Import the mood modal
+
 import "../styles/hero.css";
 
-const HeroSection = () => {
+const Hero = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <section className="hero">
-      <div className="hero-overlay"></div>
       <div className="hero-content">
-        <h1 className="hero-title">Find the Best Movies for Your Mood</h1>
-        <p className="hero-subtitle">AI-powered insights from real audience reviews</p>
-        <button className="explore-button">Find Your Next Movie</button>
+        <h1>Find Your Next Movie</h1>
+        <p>Let AI suggest the best movie based on your mood.</p>
+        
+        {/* Existing button triggers the modal */}
+        <button className="find-movie-btn" onClick={() => setIsModalOpen(true)}>
+          🎥 Find Your Next Movie
+        </button>
       </div>
-    </section>
 
-    
+      {/* Mood Selection Modal */}
+      {isModalOpen && <MoodModal onClose={() => setIsModalOpen(false)} />}
+    </section>
   );
 };
 
-export default HeroSection;
+export default Hero;

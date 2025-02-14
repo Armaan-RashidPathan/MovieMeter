@@ -1,0 +1,21 @@
+/* Reuse same styles as moodpopup.css */
+@import "./moodmodal.css";
+
+/* Extra styling for time buttons */
+.mood-button {
+  background: #333;
+  color: white;
+  border: 2px solid transparent;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.mood-button:hover {
+  background: #FF69B4;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+}
