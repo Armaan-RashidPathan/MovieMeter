@@ -24,6 +24,8 @@ const Header = () => {
         <Link to="/genres" className="nav-link">Genres</Link>
         <Link to="/favorites" className="nav-link">Favorites</Link>
       </nav>
+      
+      
     </header>
   );
 };

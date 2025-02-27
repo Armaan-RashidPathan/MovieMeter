@@ -1,0 +1,116 @@
+/* General Trending Page */
+.trending-page {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #ff1493, #86134b);
+    color: white;
+    min-height: 100vh;
+  }
+  
+  /* Section Titles */
+  .movie-section {
+    margin: 40px 0;
+  }
+  
+  .movie-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+  }
+  
+  /* Movie Grid */
+  .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Movie Card */
+  .movie-card {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 12px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 20px rgba(255, 255, 255, 0.4);
+  }
+  
+  /* Movie Poster */
+  .movie-card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .movie-card:hover img {
+    transform: scale(1.08);
+  }
+  
+  /* Movie Info */
+  .movie-info {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Rating & Genre */
+  .movie-info p {
+    font-size: 16px;
+    color: #cb36c4;
+    font-weight: bold;
+    margin-top: 5px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .trending-page {
+      padding: 40px 10px;
+    }
+  
+    .trending-page h1 {
+      font-size: 32px;
+    }
+  
+    .movie-section h2 {
+      font-size: 24px;
+    }
+  
+    .movie-grid {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+  
+    .movie-info {
+      font-size: 16px;
+    }
+  }
+  
+  @keyframes flameGlow {
+    0% { text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff; }
+    50% { text-shadow: 0 0 8px #ffffff, 0 0 15px #ffffff, 0 0 25px #ffffff; }
+    100% { text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ff1493; }
+  }
+  
+  .movie-info p {
+    font-size: 16px;
+    color: #ff69b4;
+    font-weight: bold;
+    margin-top: 5px;
+    animation: flameGlow 1.5s infinite alternate;
+  }
+  
